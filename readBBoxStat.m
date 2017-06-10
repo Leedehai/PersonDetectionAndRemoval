@@ -1,0 +1,1 @@
+[frameID, x, y, w, h] = textread('test2.avi.txt','%d%d%d%d%d');
