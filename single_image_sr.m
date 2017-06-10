@@ -1,11 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   EE 367 / CS 448I Computational Imaging and Display, Winter 2016
-%   Stanford University
-%   Instructor: Gordon Wetzstein (gordon.wetzstein@stanford.edu)
-%   Modified by: Haihong Li, Joanna Xu, Chen Zhu
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Downsample from 1 image (square shape), inpaint with NLM, and restore
 function inpaintedImg = single_image_sr(imgFilename,fillFilename)
-%   clear; clc; close all;
+   clear; clc; close all;
     % load target, HR image
     Itarget = im2double(imread(imgFilename)); 
     Imask = im2double(imread(fillFilename));
