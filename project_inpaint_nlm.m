@@ -1,7 +1,6 @@
 function [inpaintedImg,C,D]= project_inpaint_nlm(imgFilename,fillFilename, fillColor)
 %fillColor = [255, 255, 255];
 % Part of the code is credited to http://scarlet.stanford.edu/teach/index.php/Object_Removal,
-% in which the original version of inpainting is implemented
 warning off MATLAB:divideByZero
 [img,fillImg,fillRegion] = loadimgs(imgFilename,fillFilename,fillColor);
 img = double(img);
